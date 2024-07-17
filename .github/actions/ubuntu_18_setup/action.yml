@@ -33,7 +33,7 @@ runs:
       shell: bash
       if: ${{ inputs.aarch64_cross_compile == 1 }}
       run: |
-        apt-get install -y -qq gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+        apt-get install -y -qq gcc-aarch64-linux-gnu g++-aarch64-linux-gnu gcc-multilib g++-multilib
 
     - name: Install Git 2.18.5
       shell: bash
